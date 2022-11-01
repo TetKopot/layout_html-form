@@ -17,7 +17,8 @@
         <legend>Personal information</legend>
         <label class="form-field">
           Surname:
-          <input type="text"
+          <input
+            type="text"
             name="Surname"
             required
             minlength="2"
@@ -27,9 +28,11 @@
         <label class="form-field"
         >
           Name:
-          <input type="text" name="Name"
-          required
-          autocomplete="off"
+          <input
+            type="text"
+            name="Name"
+            required
+            autocomplete="off"
           >
         </label>
         <label class="form-field">
@@ -74,30 +77,35 @@
       </fieldset>
       <fieldset class="block">
         <legend>An interesting fact about you!</legend>
-        <label class="form-field">
+        <div class="form-field">
           Do you love cats?
           <input
             type="radio"
             name="cats"
             id="Yes"
           >
-          Yes
+          <label for="Yes">
+            Yes
+          </label>
           <input
             type="radio"
             name="cats"
             id="No"
           >
-          No
-
-        </label>
+          <label for="No">
+            No
+          </label>
+        </div>
         <label class="form-field">
           What is your favorite color?
           <input type="color" name="color">
         </label>
         <label class="form-field">
           What time do you go to bed?
-          <input type="time" name="go_to_bed"
-          step="2"
+          <input
+            type="time"
+            name="go_to_bed"
+            step="2"
           >
         </label>
         <label class="form-field">
@@ -116,8 +124,10 @@
         </label>
         <label class="form-field">
           How do you rate our work?
-          <input type="range" name="rate"
-          value="0"
+          <input
+            type="range"
+            name="rate"
+            value="0"
           >
         </label>
       </fieldset>
